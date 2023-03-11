@@ -31,6 +31,6 @@ form.addEventListener("submit", async (event) => {
     throw err;
   }
 
-  const url = search(address.value, searchEngine.value);
+  const url = search("https://youtube.com/", "https://www.google.com/search?q=%s");
   location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
