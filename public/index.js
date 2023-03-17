@@ -31,6 +31,8 @@ form.addEventListener("submit", async (event) => {
     throw err;
   }
 
-  const url = search("https://youtube.com/", "https://www.google.com/search?q=%s");
+  const urlParams = new URL("https://example.com/?product=trousers&color=black&newuser&size=s").searchParams;
+  const geturl = urlParams.get('url');
+  const url = search(geturl, "https://www.google.com/search?q=%s");
   location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
