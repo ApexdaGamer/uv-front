@@ -20,7 +20,7 @@ const error = document.getElementById("uv-error");
  */
 const errorCode = document.getElementById("uv-error-code");
 
-form.addEventListener("submit", async (event) => {
+window.addEventListener("domcontentloaded", async (event) => {
   event.preventDefault();
 
   try {
